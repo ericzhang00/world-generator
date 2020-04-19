@@ -20,7 +20,7 @@ public class Engine {
     public static final int HEIGHT = 30;
 
     /**
-     * Method used for exploring a fresh world. This method should handle all inputs,
+     * Method used for exploring a fresh world; handles all inputs,
      * including inputs from the main menu.
      */
     public void interactWithKeyboard() {
@@ -356,14 +356,6 @@ public class Engine {
      * @return the 2D TETile[][] representing the state of the world
      */
     public TETile[][] interactWithInputString(String input) {
-        // Fill out this method so that it run the engine using the input
-        // passed in as an argument, and return a 2D tile representation of the
-        // world that would have been drawn if the same inputs had been given
-        // to interactWithKeyboard().
-        //
-        // See proj3.byow.InputDemo for a demo of how you can make a nice clean interface
-        // that works for many different input types.
-        String input2 = input;
         TETile[][] finalWorldFrame = null;
         char front = input.charAt(0);
         if (front == 'n' || front == 'N') {
