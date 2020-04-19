@@ -8,9 +8,7 @@ import java.util.HashSet;
 import java.util.NoSuchElementException;
 
 
-/** This is a PQ implementation you can use if you don't want to use
- *  your ArrayHeapMinPQ from proj2a.
- **/
+
 public class DoubleMapPQ<T> {
     TreeMap<Double, Set<T>> priorityToItem = new TreeMap<>();
     HashMap<T, Double> itemToPriority = new HashMap<>();
